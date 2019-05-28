@@ -28,6 +28,7 @@ class WeiboCookies():
         self.username = username
         self.password = password
 
+    # 模拟登录
     def open(self):
         """
         简单的登录
@@ -43,6 +44,7 @@ class WeiboCookies():
         time.sleep(1)
         submit.click()
 
+    # 账号密码错误导致登录失败
     def passwordError(self):
         """
         判断密码是否错误
@@ -54,6 +56,7 @@ class WeiboCookies():
         except TimeoutException:
             return False
 
+    # 登录成功判断
     def login_successfully(self):
         """
         判断是否登录成功
@@ -66,6 +69,7 @@ class WeiboCookies():
         except TimeoutException:
             return False
 
+    # 滑动验证
     def get_position(self):
         """
         获取验证码位置
@@ -194,6 +198,7 @@ class WeiboCookies():
         except:
             return False
 
+    # 获取某个账号cookies
     def get_cookie(self):
         """
         获取cookies
@@ -201,6 +206,7 @@ class WeiboCookies():
         """
         return self.browser.get_cookies()
 
+    # 总入口
     def main(self):
         """
         入口
