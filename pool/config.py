@@ -16,12 +16,12 @@ REDIS_PASSWORD = None
 # 产生器使用的浏览器
 BROWSER_TYPE = 'Chrome'
 
-# 产生器类，扩展其他站点，在此配置
+# 产生器类，相关的配置
 GENERATOR_MAP = {
     'weibo': 'WeiboCookiesGenerator'
 }
 
-# 测试类，扩展其他站点，在此配置
+# 测试类，相关配置
 TESTER_MAP = {
     'weibo': 'WeiboValidTester'
 }
@@ -34,12 +34,12 @@ TEST_URL_MAP = {
 CYCLE = 120
 
 # API地址和端口
-API_HOST = '0.0.0.0'
-API_PORT = 5000
+API_HOST = 'localhost'
+API_PORT = 5003
 
 # 产生器开关，模拟登录添加Cookies
-GENERATOR_PROCESS = False
+GENERATOR_PROCESS = True
 # 验证器开关，循环检测数据库中Cookies是否可用，不可用删除
-VALID_PROCESS = False
+VALID_PROCESS = True
 # API接口服务
 API_PROCESS = True

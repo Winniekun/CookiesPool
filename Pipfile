@@ -9,6 +9,8 @@ verify_ssl = true
 pillow = "*"
 selenium = "*"
 redis = "*"
+requests = "*"
+flask = "*"
 
 [requires]
 python_version = "3.6"
